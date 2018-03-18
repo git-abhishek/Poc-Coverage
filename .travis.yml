@@ -5,7 +5,7 @@ python: "3.6"
 install:
   - pip install -r requirements.txt
 
-
+script: nosetests --with-coverage --cover-tests --cover-inclusive --cover-erase --cover-html --cover-package=arithmetic
 
 after_success:
   - coveralls
