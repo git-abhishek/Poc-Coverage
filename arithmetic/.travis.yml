@@ -1,1 +1,5 @@
 language: python
+
+python: "3.6"
+
+script: nosetests --with-coverage --cover-tests --cover-inclusive --cover-erase --cover-html --cover-package=arithmetic
